@@ -8,12 +8,11 @@ import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Objects;
 
 @NoArgsConstructor
 @Data
 @Entity
-public class Link {
+public class Link extends Auditable {
     @Id
     @GeneratedValue
     private long id;

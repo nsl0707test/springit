@@ -9,7 +9,7 @@ import java.util.Objects;
 @NoArgsConstructor
 @Data
 @Entity
-public class Comment {
+public class Comment extends Auditable {
     @Id
     @GeneratedValue
     private long id;
