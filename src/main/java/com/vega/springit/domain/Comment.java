@@ -3,9 +3,7 @@ package com.vega.springit.domain;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.util.Objects;
 
 @NoArgsConstructor
@@ -17,7 +15,9 @@ public class Comment {
     private long id;
     private String body;
 
-    //link
+    @ManyToOne
+    private Link link;
+
 
 
 }
